@@ -42,27 +42,27 @@
            }
 
            .result-visible {
-               border: 1px solid var(--dp-green);
+               border: 3px solid black;
                margin: 0 30px;
                padding: 5px 15px;
                border-radius: 8px;
            }
 
-           /* DYNAMIC CLASSES FOR RESULTS BACKGROUND*/ 
+           /* DYNAMIC CLASSES FOR RESULTS BACKGROUND*/
            .red {
-            background-color: rgb(252, 81, 81);
+               border: 3px solid rgb(252, 81, 81);
            }
 
            .orange {
-            background-color: rgb(238, 164, 26);
+               border: 3px solid rgb(238, 164, 26);
            }
 
            .yellow {
-                background-color: rgb(255, 255, 145);
+               border: 3px solid rgb(255, 255, 145);
            }
 
            .green {
-            background-color: rgb(157, 223, 157);
+               border: 3px solid rgb(157, 223, 157);
            }
 
            .hidden {
@@ -130,4 +130,3 @@
                font-weight: 600;
                color: #333;
            }
-
