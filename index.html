@@ -315,7 +315,7 @@
             
             // Determine background colour based on risk level
             let backgroundColor = '';
-            if (highestRisk === 1) {
+            if (highestRisk <= 1) {
                 backgroundColor = "green";
             } else if (highestRisk === 2) {
                 backgroundColor = "yellow";
