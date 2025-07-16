@@ -42,7 +42,7 @@
            }
 
            .result-visible {
-               border: 3px solid black;
+               border: 6px solid black;
                margin: 0 30px;
                padding: 5px 15px;
                border-radius: 8px;
@@ -51,18 +51,22 @@
            /* DYNAMIC CLASSES FOR RESULTS BACKGROUND*/
            .red {
                border: 3px solid rgb(252, 81, 81);
+               background-color: 3px solid rgb(252, 81, 81, 0.3);
            }
 
            .orange {
                border: 3px solid rgb(238, 164, 26);
+               background-color: rgb(238, 164, 26, 0.3);
            }
 
            .yellow {
                border: 3px solid rgb(255, 255, 145);
+               background-color: rgb(255, 255, 145, 0.4);
            }
 
            .green {
                border: 3px solid rgb(157, 223, 157);
+               background-color: rgb(157, 223, 157, 0.3);
            }
 
            .hidden {
