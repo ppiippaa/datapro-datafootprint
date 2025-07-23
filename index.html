@@ -14,17 +14,19 @@
 
 <body>
     <div class="content-padding page-header">
-            <h1>Data Footprint Calculator</h1>
-            <p style="color: white;">Find out how much personal information you're sharing online - and just how risky your digital habits might be.</p>
+        <h1>Data Footprint Calculator</h1>
+        <p style="color: white;">Find out how much personal information you're sharing online - and just how risky your
+            digital habits might be.</p>
     </div>
 
     <form id="footprintForm" class="content-padding">
         <h2>1. Platforms You Use</h2>
-        <label><input type="text" name="platforms" placeholder="e.g Instagram, TikTok, Reddit" style="width:100%;"></label>
+        <label><input type="text" name="platforms" placeholder="e.g Instagram, TikTok, Reddit"
+                style="width:100%;"></label>
 
         <h2>2. What You Do Online</h2>
         <div class="flex-row">
-            <div style="" class="checkbox-container">
+            <div class="checkbox-container">
                 <label><input type="checkbox" name="activity" value="1"> Lurking / reading</label>
                 <label><input type="checkbox" name="activity" value="1"> Liking / reacting</label>
                 <label><input type="checkbox" name="activity" value="1"> Following accounts / subscribing</label>
@@ -37,22 +39,20 @@
                 <label><input type="checkbox" name="activity" value="2"> Creating/joining public groups/events</label>
                 <label><input type="checkbox" name="activity" value="2"> Participating in forums</label>
                 <label><input type="checkbox" name="activity" value="3"> Uploading videos</label>
-                <label><input type="checkbox" name="activity" value="3"> Livestreaming</label>
                 <label><input type="checkbox" name="activity" value="3"> Syncing contacts</label>
-                <label><input type="checkbox" name="activity" value="3"> Using location-based apps</label>
-                <label><input type="checkbox" name="activity" value="3"> Tagging people or places in posts</label>
+                <label><input type="checkbox" name="activity" value="4"> Livestreaming</label>
+                <label><input type="checkbox" name="activity" value="4"> Using location-based apps</label>
+                <label><input type="checkbox" name="activity" value="4"> Tagging people or places in posts</label>
             </div>
         </div>
 
-
-
-        <h2>3. What You Share Online</h2>
+        <h2>3. Information You Share on Social Media (e.g. TikTok, Snapchat, Instagram)</h2>
         <div class="flex-row">
-            <div style="" class="checkbox-container">
+            <div class="checkbox-container">
                 <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
                 <label><input type="checkbox" name="info" value="1"> First name only</label>
                 <label><input type="checkbox" name="info" value="2"> Email address</label>
-                <label><input type="checkbox" name="info" value="2"> School / workplace</label>
+                <label><input type="checkbox" name="info" value="3"> School / workplace</label>
                 <label><input type="checkbox" name="info" value="2"> Date of birth</label>
                 <label><input type="checkbox" name="info" value="2"> Opinions or beliefs (e.g. politics)</label>
                 <label><input type="checkbox" name="info" value="3"> Phone number</label>
@@ -66,11 +66,74 @@
                 <label><input type="checkbox" name="info" value="4"> Real-time location</label>
                 <label><input type="checkbox" name="info" value="4"> Identity documents (ID/passport)</label>
             </div>
-
-
         </div>
 
+        <h2>3. Information You Share on Online Shopping and Services Platforms (e.g. Netflix, Uber Eats, Amazon)</h2>
+        <div class="flex-row">
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
+                <label><input type="checkbox" name="info" value="1"> First name only</label>
+                <label><input type="checkbox" name="info" value="2"> Email address</label>
+                <label><input type="checkbox" name="info" value="3"> School / workplace</label>
+                <label><input type="checkbox" name="info" value="3"> Date of birth</label>
+                <label><input type="checkbox" name="info" value="2"> Opinions or beliefs (e.g. politics)</label>
+                <label><input type="checkbox" name="info" value="3"> Phone number</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="info" value="2"> Home address</label>
+                <label><input type="checkbox" name="info" value="3"> Browsing history (via linked accounts)</label>
+                <label><input type="checkbox" name="info" value="3"> Third-party app permissions</label>
+                <label><input type="checkbox" name="info" value="2"> Photos with faces</label>
+                <label><input type="checkbox" name="info" value="2"> Videos with voice/image</label>
+                <label><input type="checkbox" name="info" value="3"> Real-time location</label>
+                <label><input type="checkbox" name="info" value="4"> Identity documents (ID/passport)</label>
+            </div>
+        </div>
 
+        <h2>3. Information You Share on School or Government Platforms (e.g. School Portal, Government Health Services)
+        </h2>
+        <div class="flex-row">
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
+                <label><input type="checkbox" name="info" value="1"> First name only</label>
+                <label><input type="checkbox" name="info" value="2"> Email address</label>
+                <label><input type="checkbox" name="info" value="2"> School / workplace</label>
+                <label><input type="checkbox" name="info" value="2"> Date of birth</label>
+                <label><input type="checkbox" name="info" value="2"> Opinions or beliefs (e.g. politics)</label>
+                <label><input type="checkbox" name="info" value="2"> Phone number</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="info" value="2"> Home address</label>
+                <label><input type="checkbox" name="info" value="2"> Browsing history (via linked accounts)</label>
+                <label><input type="checkbox" name="info" value="2"> Third-party app permissions</label>
+                <label><input type="checkbox" name="info" value="1"> Photos with faces</label>
+                <label><input type="checkbox" name="info" value="1"> Videos with voice/image</label>
+                <label><input type="checkbox" name="info" value="2"> Real-time location</label>
+                <label><input type="checkbox" name="info" value="2"> Identity documents (ID/passport)</label>
+            </div>
+        </div>
+
+        <h2>3. Information You Share on Gaming Platforms (e.g. Steam, Discord, Online Gaming Forums)</h2>
+        <div class="flex-row">
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
+                <label><input type="checkbox" name="info" value="2"> First name only</label>
+                <label><input type="checkbox" name="info" value="3"> Email address</label>
+                <label><input type="checkbox" name="info" value="3"> School / workplace</label>
+                <label><input type="checkbox" name="info" value="2"> Date of birth</label>
+                <label><input type="checkbox" name="info" value="2"> Opinions or beliefs (e.g. politics)</label>
+                <label><input type="checkbox" name="info" value="3"> Phone number</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="info" value="4"> Home address</label>
+                <label><input type="checkbox" name="info" value="3"> Browsing history (via linked accounts)</label>
+                <label><input type="checkbox" name="info" value="3"> Third-party app permissions</label>
+                <label><input type="checkbox" name="info" value="3"> Photos with faces</label>
+                <label><input type="checkbox" name="info" value="3"> Videos with voice/image</label>
+                <label><input type="checkbox" name="info" value="4"> Real-time location</label>
+                <label><input type="checkbox" name="info" value="4"> Identity documents (ID/passport)</label>
+            </div>
+        </div>
 
         <button type="button" id="submitBtn" style="margin-top:20px;">Calculate My Score</button>
         <button type="button" id="resetBtn" style="margin-left:10px;">Reset</button>
@@ -86,206 +149,433 @@
 
         <h3 style="padding-top: 24px;">Activites Done Online</h3>
         <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Activity</th>
-                    <th>Risk Level</th>
-                    <th>Points</th>
-                    <th>Why it Might Be Risky</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lurking / reading</td>
-                    <td>Low</td>
-                    <td>1</td>
-                    <td>Passive activity; no data is shared.</td>
-                </tr>
-                <tr>
-                    <td>Liking / reacting</td>
-                    <td>Low</td>
-                    <td>1</td>
-                    <td>Minimal data is shared; patterns may still be tracked.</td>
-                </tr>
-                <tr>
-                    <td>Following accounts / subscribing</td>
-                    <td>Low</td>
-                    <td>1</td>
-                    <td>May reveal interests, but limited direct exposure.</td>
-                </tr>
-                <tr>
-                    <td>Sharing links to external content</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Can indicate views and interests; can include tracking links.</td>
-                </tr>
-                <tr>
-                    <td>Commenting</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Reveals opinions; may include personal info unintentionally.</td>
-                </tr>
-                <tr>
-                    <td>Posting content</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>May contain identifying details or patterns of behaviour.</td>
-                </tr>
-                <tr>
-                    <td>Messaging (private chats/DMs)</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Private, but still stored and potentially exposed.</td>
-                </tr>
-                <tr>
-                    <td>Creating/joining public groups/events</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Shows interests, affiliations, or physical presence.</td>
-                </tr>
-                <tr>
-                    <td>Participating in forums</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Often permanent, searchable, and potentially identifying.</td>
-                </tr>
-                <tr>
-                    <td>Uploading videos</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Can reveal appearance, voice, surroundings, identity.</td>
-                </tr>
-                <tr>
-                    <td>Livestreaming</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Real-time exposure with high potential for oversharing.</td>
-                </tr>
-                <tr>
-                    <td>Syncing contacts</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Shares your personal network with the platform.</td>
-                </tr>
-                <tr>
-                    <td>Using location-based apps</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Tracks movements and habits in real time.</td>
-                </tr>
-                <tr>
-                    <td>Tagging people or places in posts</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Reveals identity, location, and relationships.</td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Risk Level</th>
+                        <th>Why it Might Be Risky</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lurking / reading</td>
+                        <td>Low</td>
+                        <td>Passive activity; no data is shared.</td>
+                    </tr>
+                    <tr>
+                        <td>Liking / reacting</td>
+                        <td>Low</td>
+                        <td>Minimal data is shared; patterns may still be tracked.</td>
+                    </tr>
+                    <tr>
+                        <td>Following accounts / subscribing</td>
+                        <td>Low</td>
+                        <td>May reveal interests, but limited direct exposure.</td>
+                    </tr>
+                    <tr>
+                        <td>Sharing links to external content</td>
+                        <td>Medium</td>
+                        <td>Can indicate views and interests; can include tracking links.</td>
+                    </tr>
+                    <tr>
+                        <td>Commenting</td>
+                        <td>Medium</td>
+                        <td>Reveals opinions; may include personal info unintentionally.</td>
+                    </tr>
+                    <tr>
+                        <td>Posting content</td>
+                        <td>Medium</td>
+                        <td>May contain identifying details or patterns of behaviour.</td>
+                    </tr>
+                    <tr>
+                        <td>Messaging (private chats/DMs)</td>
+                        <td>Medium</td>
+                        <td>Private, but still stored and potentially exposed.</td>
+                    </tr>
+                    <tr>
+                        <td>Creating/joining public groups/events</td>
+                        <td>Medium</td>
+                        <td>Shows interests, affiliations, or physical presence.</td>
+                    </tr>
+                    <tr>
+                        <td>Participating in forums</td>
+                        <td>Medium</td>
+                        <td>Often permanent, searchable, and potentially identifying.</td>
+                    </tr>
+                    <tr>
+                        <td>Uploading videos</td>
+                        <td>High</td>
+                        <td>Can reveal appearance, voice, surroundings, identity.</td>
+                    </tr>
+                                        <tr>
+                        <td>Syncing contacts</td>
+                        <td>High</td>
+                        <td>Shares your personal network with the platform.</td>
+                    </tr>
+                    <tr>
+                        <td>Livestreaming</td>
+                        <td>Very High</td>
+                        <td>Real-time exposure with high potential for oversharing.</td>
+                    </tr>
+                    <tr>
+                        <td>Using location-based apps</td>
+                        <td>Very High</td>
+                        <td>Tracks movements and habits in real time.</td>
+                    </tr>
+                    <tr>
+                        <td>Tagging people or places in posts</td>
+                        <td>Very High</td>
+                        <td>Reveals identity, location, and relationships.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <h3 style="padding-top: 24px;">Information Shared Online</h3>
+        <h3 style="padding-top: 24px;">Information Shared on Social Media Platforms</h3>
         <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Type of Info Shared</th>
-                    <th>Sensitivity Level</th>
-                    <th>Points</th>
-                    <th>Why it Might Be Risky</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Username / nickname</td>
-                    <td>Low</td>
-                    <td>1</td>
-                    <td>Often not linked to real identity, but can be reused across platforms.</td>
-                </tr>
-                <tr>
-                    <td>First name only</td>
-                    <td>Low</td>
-                    <td>1</td>
-                    <td>May be common, but contributes to identification when combined with other data.</td>
-                </tr>
-                <tr>
-                    <td>Email address</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Can be used for tracking, spam, or phishing attempts.</td>
-                </tr>
-                <tr>
-                    <td>School / workplace</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Gives away daily location and age group or profession.</td>
-                </tr>
-                <tr>
-                    <td>Date of birth</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>Common for security questions; reveals age.</td>
-                </tr>
-                <tr>
-                    <td>Opinions or beliefs (e.g. politics)</td>
-                    <td>Medium</td>
-                    <td>2</td>
-                    <td>May be used to profile or target you with content or ads.</td>
-                </tr>
-                <tr>
-                    <td>Phone number</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Used for verification, but also enables spam, scams, and tracking.</td>
-                </tr>
-                <tr>
-                    <td>Home address</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Reveals where you live; risk of stalking or physical harm.</td>
-                </tr>
-                <tr>
-                    <td>Browsing history (via linked accounts)</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Can build an in-depth profile of your habits and interests.</td>
-                </tr>
-                <tr>
-                    <td>Third-party app permissions</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Allows other apps access to your data, often with little transparency.</td>
-                </tr>
-                <tr>
-                    <td>Photos with faces</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Facial recognition and identity exposure risks.</td>
-                </tr>
-                <tr>
-                    <td>Videos with voice/image</td>
-                    <td>High</td>
-                    <td>3</td>
-                    <td>Reveals multiple personal characteristics and details.</td>
-                </tr>
-                <tr>
-                    <td>Real-time location</td>
-                    <td>Very High</td>
-                    <td>4</td>
-                    <td>Can be used to track movements and current position.</td>
-                </tr>
-                <tr>
-                    <td>Identity documents (ID/passport)</td>
-                    <td>Very High</td>
-                    <td>4</td>
-                    <td>Highly sensitive; can lead to identity theft or fraud.</td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Info Shared</th>
+                        <th>Sensitivity Level</th>
+                        <th>Why it Might Be Risky</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Username / nickname</td>
+                        <td>Low</td>
+                        <td>Often not linked to real identity, but can be reused across platforms.</td>
+                    </tr>
+                    <tr>
+                        <td>First name only</td>
+                        <td>Low</td>
+                        <td>May be common, but contributes to identification when combined with other data.</td>
+                    </tr>
+                    <tr>
+                        <td>Email address</td>
+                        <td>Medium</td>
+                        <td>Can be used for tracking, spam, or phishing attempts.</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>Medium</td>
+                        <td>Common for security questions; reveals age.</td>
+                    </tr>
+                    <tr>
+                        <td>Opinions or beliefs (e.g. politics)</td>
+                        <td>Medium</td>
+                        <td>May be used to profile or target you with content or ads.</td>
+                    </tr>
+                    <tr>
+                        <td>School / workplace</td>
+                        <td>High</td>
+                        <td>Gives away daily location and age group or profession.</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td>High</td>
+                        <td>Used for verification, but also enables spam, scams, and tracking.</td>
+                    </tr>
+                    <tr>
+                        <td>Home address</td>
+                        <td>High</td>
+                        <td>Reveals where you live; risk of stalking or physical harm.</td>
+                    </tr>
+                    <tr>
+                        <td>Browsing history (via linked accounts)</td>
+                        <td>High</td>
+                        <td>Can build an in-depth profile of your habits and interests.</td>
+                    </tr>
+                    <tr>
+                        <td>Third-party app permissions</td>
+                        <td>High</td>
+                        <td>Allows other apps access to your data, often with little transparency.</td>
+                    </tr>
+                    <tr>
+                        <td>Photos with faces</td>
+                        <td>High</td>
+                        <td>Facial recognition and identity exposure risks.</td>
+                    </tr>
+                    <tr>
+                        <td>Videos with voice/image</td>
+                        <td>High</td>
+                        <td>Reveals multiple personal characteristics and details.</td>
+                    </tr>
+                    <tr>
+                        <td>Real-time location</td>
+                        <td>Very High</td>
+                        <td>Can be used to track movements and current position.</td>
+                    </tr>
+                    <tr>
+                        <td>Identity documents (ID/passport)</td>
+                        <td>Very High</td>
+                        <td>Highly sensitive; can lead to identity theft or fraud.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
+        <h3 style="padding-top: 24px;">Information Shared on Online Shopping & Services Platforms</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Info Shared</th>
+                        <th>Sensitivity Level</th>
+                        <th>Why it Might Be Risky</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Username / nickname</td>
+                        <td>Low</td>
+                        <td>Can be reused across platforms and linked with purchase habits.</td>
+                    </tr>
+                    <tr>
+                        <td>First name only</td>
+                        <td>Low</td>
+                        <td>May not identify you alone, but can help build a profile.</td>
+                    </tr>
+                    <tr>
+                        <td>Opinions or beliefs (e.g. politics)</td>
+                        <td>Medium</td>
+                        <td>Used for profiling and ad targeting.</td>
+                    </tr>
+                    <tr>
+                        <td>Email address</td>
+                        <td>Medium</td>
+                        <td>Used for login, marketing, and vulnerable to spam/phishing.</td>
+                    </tr>
+                    <tr>
+                        <td>Home address</td>
+                        <td>High</td>
+                        <td>Shared for delivery, but poses risks if leaked.</td>
+                    </tr>
+
+                    <tr>
+                        <td>School / workplace</td>
+                        <td>High</td>
+                        <td>Helps reveal location or income bracket.</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>High</td>
+                        <td>Used for age verification and account security.</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td>High</td>
+                        <td>Used for delivery updates but vulnerable to scam calls.</td>
+                    </tr>
+                    <tr>
+                        <td>Browsing history (via linked accounts)</td>
+                        <td>High</td>
+                        <td>Used for highly targeted advertising and profiling.</td>
+                    </tr>
+                    <tr>
+                        <td>Third-party app permissions</td>
+                        <td>High</td>
+                        <td>Grants access to order data or account behaviour.</td>
+                    </tr>
+                    <tr>
+                        <td>Photos with faces</td>
+                        <td>High</td>
+                        <td>May be shared in reviews or support and expose identity.</td>
+                    </tr>
+                    <tr>
+                        <td>Videos with voice/image</td>
+                        <td>High</td>
+                        <td>Rare but can reveal habits or surroundings.</td>
+                    </tr>
+                    <tr>
+                        <td>Real-time location</td>
+                        <td>High</td>
+                        <td>Used for deliveries or transport, but reveals movement.</td>
+                    </tr>
+                    <tr>
+                        <td>Identity documents (ID/passport)</td>
+                        <td>Very High</td>
+                        <td>Sometimes required for ID verification — very sensitive.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 style="padding-top: 24px;">Information Shared on School or Government Platforms</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Info Shared</th>
+                        <th>Sensitivity Level</th>
+                        <th>Why it Might Be Risky</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Username / nickname</td>
+                        <td>Low</td>
+                        <td>Often randomly assigned, low risk alone.</td>
+                    </tr>
+                    <tr>
+                        <td>First name only</td>
+                        <td>Low</td>
+                        <td>Minimal identification risk by itself.</td>
+                    </tr>
+                    <tr>
+                        <td>Photos with faces</td>
+                        <td>Low</td>
+                        <td>May be used in school portals or IDs, but usually restricted access.</td>
+                    </tr>
+                    <tr>
+                        <td>Videos with voice/image</td>
+                        <td>Low</td>
+                        <td>Used in learning platforms — typically not public.</td>
+                    </tr>
+                    <tr>
+                        <td>Email address</td>
+                        <td>Medium</td>
+                        <td>Used for login — susceptible to phishing.</td>
+                    </tr>
+                    <tr>
+                        <td>School / workplace</td>
+                        <td>Medium</td>
+                        <td>Can reveal age group, study focus, and schedule.</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>Medium</td>
+                        <td>Used for ID and age-based services.</td>
+                    </tr>
+                    <tr>
+                        <td>Opinions or beliefs (e.g. politics)</td>
+                        <td>Medium</td>
+                        <td>Shared in projects or surveys; not always private.</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td>Medium</td>
+                        <td>Used for emergency contact — risk if exposed.</td>
+                    </tr>
+                    <tr>
+                        <td>Home address</td>
+                        <td>Medium</td>
+                        <td>Used for official records — very sensitive if shared externally.</td>
+                    </tr>
+                    <tr>
+                        <td>Browsing history (via linked accounts)</td>
+                        <td>Medium</td>
+                        <td>Could reveal learning habits or interest areas.</td>
+                    </tr>
+                    <tr>
+                        <td>Third-party app permissions</td>
+                        <td>Medium</td>
+                        <td>May expose activity across learning tools.</td>
+                    </tr>
+                    <tr>
+                        <td>Real-time location</td>
+                        <td>Medium</td>
+                        <td>Can be tracked via login IP or device — privacy concern if mishandled.</td>
+                    </tr>
+                    <tr>
+                        <td>Identity documents (ID/passport)</td>
+                        <td>Medium</td>
+                        <td>Used for formal registration — must be securely stored.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 style="padding-top: 24px;">Information Shared on Gaming Platforms</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Info Shared</th>
+                        <th>Sensitivity Level</th>
+                        <th>Why it Might Be Risky</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Username / nickname</td>
+                        <td>Medium</td>
+                        <td>Often reused across platforms; can become identifiable.</td>
+                    </tr>
+                    <tr>
+                        <td>First name only</td>
+                        <td>Medium</td>
+                        <td>Often shared in chats or profiles.</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>Medium</td>
+                        <td>Used to verify age or content access.</td>
+                    </tr>
+                    <tr>
+                        <td>Opinions or beliefs (e.g. politics)</td>
+                        <td>Medium</td>
+                        <td>May appear in forums or chats — can be logged or used against you.</td>
+                    </tr>
+                    <tr>
+                        <td>Email address</td>
+                        <td>High</td>
+                        <td>Used for account login — target for phishing and spam.</td>
+                    </tr>
+                    <tr>
+                        <td>School / workplace</td>
+                        <td>High</td>
+                        <td>May give away personal routines or age.</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td>High</td>
+                        <td>Can enable scams or in-game harassment.</td>
+                    </tr>
+                    <tr>
+                        <td>Browsing history (via linked accounts)</td>
+                        <td>High</td>
+                        <td>Used for content recommendations or targeting.</td>
+                    </tr>
+                    <tr>
+                        <td>Third-party app permissions</td>
+                        <td>High</td>
+                        <td>Used to access gaming data across devices or services.</td>
+                    </tr>
+                    <tr>
+                        <td>Photos with faces</td>
+                        <td>High</td>
+                        <td>Sometimes shared in profiles or community spaces.</td>
+                    </tr>
+                    <tr>
+                        <td>Videos with voice/image</td>
+                        <td>High</td>
+                        <td>Used in streams or chats — captures real-world data.</td>
+                    </tr>
+                    <tr>
+                        <td>Home address</td>
+                        <td>Very High</td>
+                        <td>Rarely required — serious privacy risk if leaked.</td>
+                    </tr>
+                    <tr>
+                        <td>Real-time location</td>
+                        <td>Very High</td>
+                        <td>Reveals when and where you're online or playing.</td>
+                    </tr>
+                    <tr>
+                        <td>Identity documents (ID/passport)</td>
+                        <td>Very High</td>
+                        <td>Used in age verification or reporting — critical if compromised.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
+
+    </div>
     <div class="logo-container">
         <img src="assets/DataPro_logo_circle.png" alt="DataPro Project Logo" style="max-width: 200px;">
     </div>
@@ -316,7 +606,7 @@
             });
 
             console.log(highestRisk);
-            
+
             // Determine background colour based on risk level
             let backgroundColor = '';
             if (highestRisk <= 1) {
@@ -332,30 +622,30 @@
 
             // Determine Footprint Size based on total score
             let footprintSize = '';
-            if (score <= 10) {
-                footprintSize = '🟢 Minimal – You’re sharing very little online';
+            if (score <= 8) {
+                footprintSize = '🟢 Minimal – You’re sharing very little personal information online. This means your data footprint is small, and it’s harder for others to track or profile you. Keep up the good habits!';
+            } else if (score <= 17) {
+                footprintSize = '🟠 Moderate – You’re sharing a fair amount of personal information online. Your data footprint is growing, which can make it easier for companies or others to learn about your habits and preferences. Consider reviewing what you share and how often.';
             } else if (score <= 25) {
-                footprintSize = '🟠 Moderate – You’re sharing a fair amount';
-            } else if (score <= 45) {
-                footprintSize = '🟡 Significant – Your online footprint is growing';
+                footprintSize = '🟡 Significant – You’ve shared quite a lot of personal information online. Your data footprint is now quite visible and could be used to build a detailed profile of you. It’s a good time to think carefully about privacy settings and the data you put out there.';
             } else {
-                footprintSize = '🔴 Large – You have a very big online footprint';
+                footprintSize = '🔴 Large – You’ve shared a substantial amount of personal information online, increasing your digital exposure. This level of sharing can put you at greater risk for privacy breaches or unwanted tracking. Consider tightening your privacy controls and being cautious about what you share in the future.';
             }
 
             // Determine Risk Level based on highest risk value
             let riskLevel = '';
             switch (highestRisk) {
                 case 4:
-                    riskLevel = '🔴 High Risk – You’ve shared highly sensitive information or actions';
+                    riskLevel = '🔴 High Risk – You’ve shared highly sensitive personal information. This could expose you to privacy breaches, identity theft, or unwanted attention. Consider reviewing what kind of content you post and adjusting your privacy settings.';
                     break;
                 case 3:
-                    riskLevel = '🟠 Moderate Risk – You’re sharing some sensitive data or actions';
+                    riskLevel = '🟠 Moderate Risk – You’re sharing some sensitive data which could make you more visible online. There’s a risk that this information could be used in ways you didn’t intend. Think about what you’re sharing and who can see it.';
                     break;
                 case 2:
-                    riskLevel = '🟡 Low Risk – You have moderate sharing behaviour';
+                    riskLevel = '🟡 Low Risk – You have moderate sharing behaviour. You’re making some data visible online, but it’s not highly sensitive. Still, it’s worth occasionally reviewing your sharing habits and privacy settings.';
                     break;
                 default:
-                    riskLevel = '🟢 Minimal Risk – Your online activity is quite safe';
+                    riskLevel = '🟢 Minimal Risk – Your online activity is quite safe. You’re cautious about what you share and who can see it. Keep it up and stay aware as digital platforms change.';
             }
 
 
@@ -363,9 +653,12 @@
             let resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `
                 <h3>The results are in...</h3>
-                <strong>Footprint Score:</strong> ${score}<br></br>
-                <strong>Footprint Size:</strong> ${footprintSize}<br></br>
-                <strong>Risk Level:</strong> ${riskLevel}<br></br>`;
+                <strong>Footprint Size:</strong><br></br>
+                Your Data Footprint score is <strong>${score}/33</strong><br></br>
+                ${footprintSize}<br></br>  
+                <strong>Risk Level:</strong><br></br>
+                ${riskLevel}<br></br>`;
+
 
             // resultDiv.classList.remove('hidden');
             resultDiv.removeAttribute('class');
