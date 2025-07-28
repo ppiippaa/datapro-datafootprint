@@ -10,23 +10,30 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon-calculator.png" type="image/png">
+    <link rel="icon" href="assets/favicon-calculator.png" type="image/png">
 
 </head>
 
 <body>
-    <div class="content-padding page-header">
-        <h1>Data Footprint Calculator</h1>
-        <p style="color: white;">Find out how much personal information you're sharing online - and just how risky your
-            digital habits might be.</p>
+    <div class="content-padding page-header flex-row">
+        <div>
+            <h1>Data Footprint Calculator</h1>
+            <p style="color: white;">Find out how much personal information you're sharing online - and just how risky
+                your digital habits might be.</p>
+        </div>
+        <div>
+            <img src="assets/footprint-pixelated.png" alt="footprint icon">
+        </div>
+
     </div>
 
     <form id="footprintForm" class="content-padding">
-        <h2>1. Platforms You Use</h2>
+        <h2>Step 1 --> Platforms You Use</h2>
         <label><input type="text" name="platforms" placeholder="e.g Instagram, TikTok, Reddit"
                 style="width:100%;"></label>
 
-        <h2>2. What You Do Online</h2>
+        <hr>
+        <h2>Step 2 --> What You Do Online</h2>
         <div class="flex-row">
             <div class="checkbox-container">
                 <label><input type="checkbox" name="activity" value="1"> Lurking / reading</label>
@@ -47,8 +54,9 @@
                 <label><input type="checkbox" name="activity" value="4"> Tagging people or places in posts</label>
             </div>
         </div>
-
-        <h2>3. Information You Share on Social Media (e.g. TikTok, Snapchat, Instagram)</h2>
+        <hr>
+        <h2>Step 3 --> Information You Share on...</h2>
+        <h3>Social Media (e.g. TikTok, Snapchat, Instagram)</h3>
         <div class="flex-row">
             <div class="checkbox-container">
                 <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
@@ -70,7 +78,7 @@
             </div>
         </div>
 
-        <h2>3. Information You Share on Online Shopping and Services Platforms (e.g. Netflix, Uber Eats, Amazon)</h2>
+        <h3>Online Shopping and Services Platforms (e.g. Netflix, Uber Eats, Amazon)</h3>
         <div class="flex-row">
             <div class="checkbox-container">
                 <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
@@ -92,8 +100,7 @@
             </div>
         </div>
 
-        <h2>3. Information You Share on School or Government Platforms (e.g. School Portal, Government Health Services)
-        </h2>
+        <h3>School or Government Platforms (e.g. School Portal, Government Health Services)</h3>
         <div class="flex-row">
             <div class="checkbox-container">
                 <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
@@ -115,7 +122,7 @@
             </div>
         </div>
 
-        <h2>3. Information You Share on Gaming Platforms (e.g. Steam, Discord, Online Gaming Forums)</h2>
+        <h3>Gaming Platforms (e.g. Steam, Discord, Online Gaming Forums)</h3>
         <div class="flex-row">
             <div class="checkbox-container">
                 <label><input type="checkbox" name="info" value="1"> Username / nickname</label>
@@ -142,14 +149,33 @@
 
     </form>
 
+
+
     <div id="result" style="color: black;"></div>
 
     <div id="riskBreakdown" class="hidden content-padding">
-        <h2 style="border-top: 1px solid rgb(128, 128, 128, 0.5); padding-top: 20px;">Understanding the Risks</h2>
-        <p>Here's a complete breakdown of the risks involved with any activities you may do or infomation you share
-            online. Stay safe out there!</p>
 
-        <h3 style="padding-top: 24px;">Activites Done Online</h3>
+        <hr>
+
+        <h2>Understanding the Risks</h2>
+        <p>Below you’ll find a full explanation of the risks associated with the things you do and share online. Not all
+            actions are equally risky — context matters, so <e>where</e> you post something can make a big difference.
+            For example, sharing your location privately with friends is very different from posting it publicly on a
+            livestream. That’s why we’ve broken things down into separate tables based on the type of platform you’re
+            using.</p>
+        <p>Check out the links below to explore each category in more detail:</p>
+        <ul>
+            <li class="explananation-li"><a href="#activities-done-table">Activities done online</a></li>
+            <li class="explananation-li"><a href="#info-sm-table">Information shared on social media platforms</a></li>
+            <li class="explananation-li"><a href="#info-shopping-table">Information shared on online shopping and
+                    services platforms</a></li>
+            <li class="explananation-li"><a href="#info-school-table">Information shared on school or government
+                    platforms</a></li>
+            <li class="explananation-li"><a href="#info-gaming-table">Information shared on gaming platforms</a></li>
+        </ul>
+        <p>The more you understand, the more in control you’ll be of your data footprint. Stay safe out there!</p>
+
+        <h3 style="padding-top: 24px;" id="activities-done-table">Activites Done Online</h3>
         <div class="table-container">
             <table>
                 <thead>
@@ -210,7 +236,7 @@
                         <td>High</td>
                         <td>Can reveal appearance, voice, surroundings, identity.</td>
                     </tr>
-                                        <tr>
+                    <tr>
                         <td>Syncing contacts</td>
                         <td>High</td>
                         <td>Shares your personal network with the platform.</td>
@@ -234,7 +260,7 @@
             </table>
         </div>
 
-        <h3 style="padding-top: 24px;">Information Shared on Social Media Platforms</h3>
+        <h3 style="padding-top: 24px;" id="info-sm-table">Information Shared on Social Media Platforms</h3>
         <div class="table-container">
             <table>
                 <thead>
@@ -319,7 +345,8 @@
             </table>
         </div>
 
-        <h3 style="padding-top: 24px;">Information Shared on Online Shopping & Services Platforms</h3>
+        <h3 style="padding-top: 24px;" id="info-shopping-table">Information Shared on Online Shopping & Services
+            Platforms</h3>
         <div class="table-container">
             <table>
                 <thead>
@@ -405,7 +432,7 @@
             </table>
         </div>
 
-        <h3 style="padding-top: 24px;">Information Shared on School or Government Platforms</h3>
+        <h3 style="padding-top: 24px;" id="info-school-table">Information Shared on School or Government Platforms</h3>
         <div class="table-container">
             <table>
                 <thead>
@@ -492,7 +519,7 @@
 
         <h3 style="padding-top: 24px;">Information Shared on Gaming Platforms</h3>
         <div class="table-container">
-            <table>
+            <table id="info-gaming-table">
                 <thead>
                     <tr>
                         <th>Type of Info Shared</th>
@@ -592,81 +619,109 @@
             let infoCheckboxes = document.querySelectorAll('input[name="info"]:checked');
 
             let score = 0;
-            let highestRisk = 0;
 
-            // Calculate total score and highest risk level
+            // Calculate total score of all action checkboxes
             activityCheckboxes.forEach(cb => {
                 let val = parseInt(cb.value);
                 score += val;
-                if (val > highestRisk) highestRisk = val;
+                // convert to %
             });
 
-            infoCheckboxes.forEach(cb => {
-                let val = parseInt(cb.value);
-                score += val;
-                if (val > highestRisk) highestRisk = val;
-            });
+            let percentageScore = Math.floor((score / 33) * 100);
 
+            // Maps through all infoCheckbox values and assigns highest to higestRisk
+            let highestRisk = infoCheckboxes.length ? Math.max(...[...infoCheckboxes].map(cb => parseInt(cb.value))) : 0;
+
+
+            console.log(score);
             console.log(highestRisk);
-
-            // Determine background colour based on risk level
-            let backgroundColor = '';
-            if (highestRisk <= 1) {
-                backgroundColor = "green";
-            } else if (highestRisk === 2) {
-                backgroundColor = "yellow";
-            } else if (highestRisk === 3) {
-                backgroundColor = "orange";
-            } else if (highestRisk === 4) {
-                backgroundColor = "red";
-            };
 
 
             // Determine Footprint Size based on total score
             let footprintSize = '';
             if (score <= 8) {
-                footprintSize = '🟢 Minimal – You’re sharing very little personal information online. This means your data footprint is small, and it’s harder for others to track or profile you. Keep up the good habits!';
+                footprintSize = '<strong>Minimal</strong> – You’re sharing very little personal information online. This means your data footprint is small, and it’s harder for others to track or profile you. Keep up the good habits!';
             } else if (score <= 17) {
-                footprintSize = '🟠 Moderate – You’re sharing a fair amount of personal information online. Your data footprint is growing, which can make it easier for companies or others to learn about your habits and preferences. Consider reviewing what you share and how often.';
+                footprintSize = '<strong>Moderate</strong> – You’re sharing a fair amount of personal information online. Your data footprint is growing, which can make it easier for companies or others to learn about your habits and preferences. Consider reviewing what you share and how often.';
             } else if (score <= 25) {
-                footprintSize = '🟡 Significant – You’ve shared quite a lot of personal information online. Your data footprint is now quite visible and could be used to build a detailed profile of you. It’s a good time to think carefully about privacy settings and the data you put out there.';
+                footprintSize = '<strong>Significant</strong> – You’ve shared quite a lot of personal information online. Your data footprint is now quite visible and could be used to build a detailed profile of you. It’s a good time to think carefully about privacy settings and the data you put out there.';
             } else {
-                footprintSize = '🔴 Large – You’ve shared a substantial amount of personal information online, increasing your digital exposure. This level of sharing can put you at greater risk for privacy breaches or unwanted tracking. Consider tightening your privacy controls and being cautious about what you share in the future.';
+                footprintSize = '<strong>Large</strong> – You’ve shared a substantial amount of personal information online, increasing your digital exposure. This level of sharing can put you at greater risk for privacy breaches or unwanted tracking. Consider tightening your privacy controls and being cautious about what you share in the future.';
             }
 
             // Determine Risk Level based on highest risk value
             let riskLevel = '';
             switch (highestRisk) {
                 case 4:
-                    riskLevel = '🔴 High Risk – You’ve shared highly sensitive personal information. This could expose you to privacy breaches, identity theft, or unwanted attention. Consider reviewing what kind of content you post and adjusting your privacy settings.';
+                    riskLevel = '<strong>High Risk</strong> – You’ve shared highly sensitive personal information. This could expose you to privacy breaches, identity theft, or unwanted attention. Consider reviewing what kind of content you post and adjusting your privacy settings.';
                     break;
                 case 3:
-                    riskLevel = '🟠 Moderate Risk – You’re sharing some sensitive data which could make you more visible online. There’s a risk that this information could be used in ways you didn’t intend. Think about what you’re sharing and who can see it.';
+                    riskLevel = '<strong>Moderate Risk</strong> – You’re sharing some sensitive data which could make you more visible online. There’s a risk that this information could be used in ways you didn’t intend. Think about what you’re sharing and who can see it.';
                     break;
                 case 2:
-                    riskLevel = '🟡 Low Risk – You have moderate sharing behaviour. You’re making some data visible online, but it’s not highly sensitive. Still, it’s worth occasionally reviewing your sharing habits and privacy settings.';
+                    riskLevel = '<strong>Low Risk</strong> – You have moderate sharing behaviour. You’re making some data visible online, but it’s not highly sensitive. Still, it’s worth occasionally reviewing your sharing habits and privacy settings.';
                     break;
                 default:
-                    riskLevel = '🟢 Minimal Risk – Your online activity is quite safe. You’re cautious about what you share and who can see it. Keep it up and stay aware as digital platforms change.';
+                    riskLevel = '<strong>Minimal</strong> Risk – Your online activity is quite safe. You’re cautious about what you share and who can see it. Keep it up and stay aware as digital platforms change.';
             }
+
+            // Determine footprint size title colour
+            let footprintSizeTitleColor = '';
+            if (score <= 8) {
+                footprintSizeTitleColor = "green";
+            } else if (score <= 17) {
+                footprintSizeTitleColor = "yellow";
+            } else if (score <= 25) {
+                footprintSizeTitleColor = "orange";
+            } else if (score <= 33) {
+                footprintSizeTitleColor = "red";
+            };
+
+            console.log("footprint size title colour: ", footprintSizeTitleColor);
+
+            // Determine risk level title colour
+            let riskLevelTitleColor = '';
+            if (highestRisk <= 1) {
+                riskLevelTitleColor = "green";
+            } else if (highestRisk === 2) {
+                riskLevelTitleColor = "yellow";
+            } else if (highestRisk === 3) {
+                riskLevelTitleColor = "orange";
+            } else if (highestRisk === 4) {
+                riskLevelTitleColor = "red";
+            };
+
+            console.log("risk level title colour: ", riskLevelTitleColor);
 
 
             // Show result div and populate results
             let resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `
-                <h3>The results are in...</h3>
-                <strong>Footprint Size:</strong><br></br>
-                Your Data Footprint score is <strong>${score}/33</strong><br></br>
-                ${footprintSize}<br></br>  
-                <strong>Risk Level:</strong><br></br>
-                ${riskLevel}<br></br>`;
+                <div>
+                <h2>The results are in...</h2>
+                <h3 id="footprint-size-title">Footprint Size:</h3>
+                Your Data Footprint score is <strong>${percentageScore}%</strong><br></br>
+                ${footprintSize}
+                <h3 id="risk-level-title">Risk Level:</h3>
+                ${riskLevel}    
+                </div>
+                <div>
+                <img src="assets/result-trophy-icon.png">  
+                </div>
+`;
 
 
-            // resultDiv.classList.remove('hidden');
-            resultDiv.removeAttribute('class');
+            // Get title and assign colour:
 
+            const footprintSizeTitle = document.getElementById('footprint-size-title');
+            const riskLevelTitle = document.getElementById('risk-level-title');
+
+            footprintSizeTitle.classList.add(footprintSizeTitleColor);
+            riskLevelTitle.classList.add(riskLevelTitleColor);
+
+            resultDiv.classList.remove('hidden');
+            // resultDiv.removeAttribute('class');
             resultDiv.classList.add('result-visible');
-            resultDiv.classList.add(`${backgroundColor}`);
             resultDiv.classList.add('visible');
 
 
@@ -674,6 +729,7 @@
             const breakdown = document.getElementById("riskBreakdown");
             breakdown.classList.remove('hidden');
             breakdown.classList.add('visible');
+
 
         });
 
