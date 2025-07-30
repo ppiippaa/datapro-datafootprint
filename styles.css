@@ -58,7 +58,7 @@
            }
 
            #result h3 {
-               text-decoration: underline;
+               font-family: "Press Start 2P", system-ui;
            }
 
            #result img {

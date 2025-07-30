@@ -6,7 +6,8 @@
     <title>Data Footprint Calculator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -640,29 +641,55 @@
             // Determine Footprint Size based on total score
             let footprintSize = '';
             if (score <= 8) {
-                footprintSize = '<strong>Minimal</strong> – You’re sharing very little personal information online. This means your data footprint is small, and it’s harder for others to track or profile you. Keep up the good habits!';
+                footprintSize = 'Minimal';
             } else if (score <= 17) {
-                footprintSize = '<strong>Moderate</strong> – You’re sharing a fair amount of personal information online. Your data footprint is growing, which can make it easier for companies or others to learn about your habits and preferences. Consider reviewing what you share and how often.';
+                footprintSize = 'Moderate';
             } else if (score <= 25) {
-                footprintSize = '<strong>Significant</strong> – You’ve shared quite a lot of personal information online. Your data footprint is now quite visible and could be used to build a detailed profile of you. It’s a good time to think carefully about privacy settings and the data you put out there.';
+                footprintSize = 'Significant';
             } else {
-                footprintSize = '<strong>Large</strong> – You’ve shared a substantial amount of personal information online, increasing your digital exposure. This level of sharing can put you at greater risk for privacy breaches or unwanted tracking. Consider tightening your privacy controls and being cautious about what you share in the future.';
+                footprintSize = 'Large';
+            }
+
+            let footprintSizeMessage = '';
+            if (score <= 8) {
+                footprintSizeMessage = 'You’re sharing very little personal information online. This means your data footprint is small, and it’s harder for others to track or profile you. Keep up the good habits!';
+            } else if (score <= 17) {
+                footprintSizeMessage = 'You’re sharing a fair amount of personal information online. Your data footprint is growing, which can make it easier for companies or others to learn about your habits and preferences. Consider reviewing what you share and how often.';
+            } else if (score <= 25) {
+                footprintSizeMessage = 'You’ve shared quite a lot of personal information online. Your data footprint is now quite visible and could be used to build a detailed profile of you. It’s a good time to think carefully about privacy settings and the data you put out there.';
+            } else {
+                footprintSizeMessage = 'You’ve shared a substantial amount of personal information online, increasing your digital exposure. This level of sharing can put you at greater risk for privacy breaches or unwanted tracking. Consider tightening your privacy controls and being cautious about what you share in the future.';
             }
 
             // Determine Risk Level based on highest risk value
             let riskLevel = '';
             switch (highestRisk) {
                 case 4:
-                    riskLevel = '<strong>High Risk</strong> – You’ve shared highly sensitive personal information. This could expose you to privacy breaches, identity theft, or unwanted attention. Consider reviewing what kind of content you post and adjusting your privacy settings.';
+                    riskLevel = 'High Risk';
                     break;
                 case 3:
-                    riskLevel = '<strong>Moderate Risk</strong> – You’re sharing some sensitive data which could make you more visible online. There’s a risk that this information could be used in ways you didn’t intend. Think about what you’re sharing and who can see it.';
+                    riskLevel = 'Moderate Risk';
                     break;
                 case 2:
-                    riskLevel = '<strong>Low Risk</strong> – You have moderate sharing behaviour. You’re making some data visible online, but it’s not highly sensitive. Still, it’s worth occasionally reviewing your sharing habits and privacy settings.';
+                    riskLevel = 'Low Risk';
                     break;
                 default:
-                    riskLevel = '<strong>Minimal</strong> Risk – Your online activity is quite safe. You’re cautious about what you share and who can see it. Keep it up and stay aware as digital platforms change.';
+                    riskLevel = 'Minimal';
+            }
+
+            let riskLevelMessage = '';
+            switch (highestRisk) {
+                case 4:
+                    riskLevelMessage = 'You’ve shared highly sensitive personal information. This could expose you to privacy breaches, identity theft, or unwanted attention. Consider reviewing what kind of content you post and adjusting your privacy settings.';
+                    break;
+                case 3:
+                    riskLevelMessage = 'You’re sharing some sensitive data which could make you more visible online. There’s a risk that this information could be used in ways you didn’t intend. Think about what you’re sharing and who can see it.';
+                    break;
+                case 2:
+                    riskLevelMessage = 'You have moderate sharing behaviour. You’re making some data visible online, but it’s not highly sensitive. Still, it’s worth occasionally reviewing your sharing habits and privacy settings.';
+                    break;
+                default:
+                    riskLevelMessage = 'Your online activity is quite safe. You’re cautious about what you share and who can see it. Keep it up and stay aware as digital platforms change.';
             }
 
             // Determine footprint size title colour
@@ -699,11 +726,11 @@
             resultDiv.innerHTML = `
                 <div>
                 <h2>The results are in...</h2>
-                <h3 id="footprint-size-title">Footprint Size:</h3>
-                Your Data Footprint score is <strong>${percentageScore}%</strong><br></br>
-                ${footprintSize}
-                <h3 id="risk-level-title">Risk Level:</h3>
-                ${riskLevel}    
+                <h3 id="footprint-size-title">Footprint Size: ${footprintSize}</h3>
+                Your Data Footprint score is <strong>${percentageScore}%</strong>
+                <p>${footprintSizeMessage}</p>
+                <h3 id="risk-level-title">Risk Level: ${riskLevel}</h3>
+                <p>${riskLevelMessage}</p>    
                 </div>
                 <div>
                 <img src="assets/result-trophy-icon.png">  
