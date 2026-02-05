@@ -250,7 +250,6 @@
                .table-container table {
                    width: 100%;
                    min-width: 600px;
-                   /* or however wide your table needs to be */
                }
 
                .logo-container {
